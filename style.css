@@ -1,0 +1,78 @@
+body {
+    background-color: azure;
+    font-family: sans-serif;
+}
+
+header,
+main,
+footer,
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* outline: 2px blue dotted; */
+    object-fit: contain;
+}
+
+header,
+main,
+main ul{
+    justify-content: center;
+    gap: 2rem;
+}
+
+main {
+    margin-bottom: 3rem;
+}
+
+footer ul {
+    gap: 1rem;
+    
+}
+
+footer {
+    justify-content: center;
+    border-top: 1px dotted blue;
+}
+.visually-hidden {
+    /* Double check the accessible visually hidden CSS */
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ li{
+    padding: none;
+ }
+
+
+.recipe-card {
+    display: block;
+    min-width: 100px;
+    max-width: 270px;
+    min-height: 100px;
+    outline: 2px solid black;
+    padding: 1rem;
+    
+}
+
+.recipe-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.img-holder {
+    padding: 1rem;
+}
+
+img {
+    object-fit: contain;
+    max-width: calc(270px - 32px - 32px);
+}
