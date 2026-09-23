@@ -3,10 +3,9 @@ body {
     font-family: sans-serif;
 }
 
+
 header,
-main,
-footer,
-ul {
+.flex{
     display: flex;
     flex-wrap: wrap;
     /* outline: 2px blue dotted; */
@@ -24,15 +23,26 @@ main {
     margin-bottom: 3rem;
 }
 
-footer ul {
-    gap: 1rem;
+footer li {
+    margin: 1rem;
     
 }
 
 footer {
+    display: flex;
     justify-content: center;
     border-top: 1px dotted blue;
+    /* gap: 1rem; */
+    
+    /* padding: 1rem 2rem; */
 }
+
+
+
+footer, nav{
+    outline: 2px dotted orange;
+}
+
 .visually-hidden {
     /* Double check the accessible visually hidden CSS */
     height: 1px;
@@ -41,12 +51,12 @@ footer {
     overflow: hidden;
 }
 
-ul {
+.flex ul {
     list-style: none;
     padding: 0;
 }
 
- li{
+.flex li{
     padding: none;
  }
 
@@ -72,7 +82,69 @@ ul {
     padding: 1rem;
 }
 
-img {
+.img-holder img {
     object-fit: contain;
     max-width: calc(270px - 32px - 32px);
 }
+
+figure {
+    margin: 1rem 0;
+    /* border: 2px dotted red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+
+figure img {   
+    max-width: calc(270px - 32px - 32px);
+}
+
+.recipes {
+    padding: 0 2rem;
+}
+
+.recipe-container {
+    margin: 1rem auto;
+    border: 3px solid black;
+    max-width: 900px
+}
+
+
+@media screen and (min-width: 600px) {
+    figure img {
+        max-width: 500px;
+    }
+
+    .recipe-container {
+      max-width: 500px;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    /* outline: 2px blue dotted; */
+        object-fit: contain;
+        justify-content: center;
+    }
+
+    footer ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    figure img{
+        max-width: 900px;
+    }
+    .recipe-container {
+      max-width: 900px
+    }
+    
+}
+
