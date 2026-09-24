@@ -7,15 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="flex">
-        <h1>Akk-hrt's Odin Recipes</h1>
-    </header>
+        <header>
+        <!-- skip link -->
+        
+        <!-- logo -->
+            <div class="logo-placeholder">
+                <a href="index.html">
+                    <img src="images/OdinRecipeSiteLogo.png" alt="Akk-hrt's Odin Recipes">
+                </a>
+
+            </div>
+            <!-- header nav -->
+            <nav aria-label="header navigation">
+                <ul class="nav  no-bullet">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes/lasagna.html">Lasagna</a></li>
+                    <li><a href="recipes/FruitSalad.html">Fruit Salad</a></li>
+                    <li><a href="recipes/CreamyCornSoup.html">Creamy Corn Soup</a></li>
+                </ul>
+            </nav>
+        </header>
 
     <main class="flex">
+        <h1>Akk-hrt's Odin Recipes</h1>
         <h2 class="visually-hidden">
             Recipe List
         </h2>
-        <ul  class="flex">
+        <ul  class="flex  no-bullet">
             <li><a href="recipes/lasagna.html" class="recipe-card">
                 <div class="img-holder">
                     <img src="images/lasagna.png" alt="">
@@ -42,7 +60,7 @@
     <footer>
         <nav aria-label="footer navigation">
             <h2>Site Map</h2>
-            <ul class="footer-nav">
+            <ul class="footer-nav  no-bullet">
             <li><a href="index.html">Home</a></li>
             <li><a href="recipes/lasagna.html">Lasagna</a></li>
             <li><a href="recipes/FruitSalad.html">Fruit Salad</a></li>

@@ -1,14 +1,41 @@
 :root {
-    --sp-frame: calc(320px * 80%);
+    /* colour scheme */
+    --color-dark: #3f2518; 
+    --color-light: #f5eeda;
+    --color-red: #a51a4d;
+    --color-gold: #d4c097;
+}
+
+:root.dark {
+    --color-base-bg: var(--color-dark);
+    --color-base-text: var(--color-light);
+}
+
+:root.light {
+    --color-base-bg: var(--color-light);
+    --color-base-text:var(--color-dark);
 }
 
 body {
-    background-color: azure;
+    background-color: var(--color-base-bg);
     font-family: sans-serif;
 }
 
+header {
+    display:flex;
+    justify-content: space-between;
+}
 
-header,
+.nav {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+}
+
+.logo-placeholder img{
+    width: 100px;
+}
+
 .flex{
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +62,7 @@ footer li {
 footer {
     display: flex;
     justify-content: center;
-    border-top: 1px dotted blue;
+    border-top: 1px dotted var(--color-red);
     /* gap: 1rem; */
     
     /* padding: 1rem 2rem; */
@@ -44,7 +71,7 @@ footer {
 
 
 footer, nav{
-    outline: 2px dotted orange;
+    outline: 2px dotted var(--color-red);
 }
 
 .visually-hidden {
@@ -70,7 +97,7 @@ footer, nav{
     min-width: 100px;
     max-width: 270px;
     min-height: 100px;
-    outline: 2px solid black;
+    outline: 2px solid var(--color-dark);
     padding: 1rem;
     
 }
@@ -114,7 +141,7 @@ figure img {
 
 .recipe-container {
     margin: 1rem auto;
-    border: 3px solid black;
+    border: 3px solid var(--color-dark);
     /* max-width: 900px */
     width: max(calc(320px * 80%), 80%);
 }
@@ -125,7 +152,7 @@ figure img {
     footer {
         display: flex;
         flex-wrap: wrap;
-    outline: 2px blue dotted;
+         outline: 2px blue dotted;
         object-fit: contain;
         justify-content: center;
     }
