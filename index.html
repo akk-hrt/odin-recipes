@@ -7,67 +7,84 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <header>
+    <header>
         <!-- skip link -->
         
         <!-- logo -->
-            <div class="logo-placeholder">
-                <a href="index.html">
-                    <img src="images/OdinRecipeSiteLogo.png" alt="Akk-hrt's Odin Recipes">
-                </a>
+        <div class="logo-placeholder">
+            <a href="index.html">
+                <img src="images/OdinRecipesLogoText.png" alt="Akk-hrt's Odin Recipes">
+            </a>
 
-            </div>
-            <!-- header nav -->
-            <nav aria-label="header navigation">
-                <ul class="nav  no-bullet">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="recipes/lasagna.html">Lasagna</a></li>
-                    <li><a href="recipes/FruitSalad.html">Fruit Salad</a></li>
-                    <li><a href="recipes/CreamyCornSoup.html">Creamy Corn Soup</a></li>
-                </ul>
-            </nav>
-        </header>
-
-    <main class="flex">
-        <h1>Akk-hrt's Odin Recipes</h1>
-        <h2 class="visually-hidden">
-            Recipe List
-        </h2>
-        <ul  class="flex  no-bullet">
-            <li><a href="recipes/lasagna.html" class="recipe-card">
-                <div class="img-holder">
-                    <img src="images/lasagna.png" alt="">
-                </div>
-                <div class="recipe-name">Lasagna</div>
-            </a></li>
-            <li><a href="recipes/FruitSalad.html" class="recipe-card">
-                 <div class="img-holder">
-                    <img src="images/FruitSalad.png" alt="">
-                 </div>
-                 <div class="recipe-name">
-                    Fruit Salad
-                 </div>
-            </a></li>
-            <li><a href="recipes/CreamyCornSoup.html" class="recipe-card">
-                <div class="img-holder">
-                    <img src="images/CreamyCornSoup.png" alt="">
-                </div>
-                <div class="recipe-name">
-                    Creamy Corn Soup
-                </div></a></li>
-        </ul>
-    </main>
-    <footer>
-        <nav aria-label="footer navigation">
-            <h2>Site Map</h2>
-            <ul class="footer-nav  no-bullet">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="recipes/lasagna.html">Lasagna</a></li>
-            <li><a href="recipes/FruitSalad.html">Fruit Salad</a></li>
-            <li><a href="recipes/CreamyCornSoup.html">Creamy Corn Soup</a></li>
+        </div>
+        <!-- header nav -->
+        <nav aria-label="header navigation">
+            <ul class="nav  no-bullet">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lasagna.html">Lasagna</a></li>
+                <li><a href="FruitSalad.html">Fruit Salad</a></li>
+                <li><a href="CreamyCornSoup.html">Creamy Corn Soup</a></li>
             </ul>
         </nav>
+    </header>
+    <main>
+        <h1>Akk-hrt's Odin Recipes</h1>
+        <section>
+            <h2>Click a recipe card</h2>
+                <ul  class="flex no-bullet card-holder">
+                    <li><a href="lasagna.html" class="recipe-card">
+                        <div class="img-holder">
+                            <img src="images/lasagna.png" alt="">
+                        </div>
+                        <div class="recipe-name">Lasagna</div>
+                    </a></li>
+                    <li><a href="FruitSalad.html" class="recipe-card">
+                        <div class="img-holder">
+                            <img src="images/FruitSalad.png" alt="">
+                        </div>
+                        <div class="recipe-name">
+                            Fruit Salad
+                        </div>
+                    </a></li>
+                    <li><a href="CreamyCornSoup.html" class="recipe-card">
+                        <div class="img-holder">
+                            <img src="images/CreamyCornSoup.png" alt="">
+                        </div>
+                        <div class="recipe-name">
+                            Creamy Corn Soup
+                        </div></a></li>
+                 </ul>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-sitemap">
+             <!-- logo -->
+            <div class="footer-logo">
+                    <img src="images/OdinRecipesLogoText.png" alt="Akk-hrt's Odin Recipes">
+
+            </div>
+            <!-- sitemap     -->
+            <nav aria-label="footer navigation" class="sitemap">
+                <h2>Site Map</h2>
+                <ul class="  no-bullet">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lasagna.html">Lasagna</a></li>
+                <li><a href="FruitSalad.html">Fruit Salad</a></li>
+                <li><a href="CreamyCornSoup.html">Creamy Corn Soup</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- disclaimer -->
+        <section>
+            <h2>Disclaimer</h2>
+            <p class="disclaimer">This site is a sample project created for learning and practice purposes. Recipe content is for demonstration only and not accurate, complete, or suitable for dietary needs. Please use your own judgement and verify ingredients before cooking or serving any food.</p>
+        </section>
+        <!-- copyright -->
+         <section>
+            <h2>Copyright Notice</h2>
+            <p class="copyright">Copyright 2026 Akk-hrt. All rights reserved.</p>
+         </section>
     </footer>
-    
 </body>
 </html>
