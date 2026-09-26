@@ -46,6 +46,9 @@ header {
     justify-content: right;
 }
 
+.logo-placeholder a {
+    display: inline-block;
+}
 .logo-placeholder img{
     width: 200px;
 }
@@ -115,6 +118,11 @@ footer > section > p {
     width: 1px;
     position: absolute;
     overflow: hidden;
+    padding: 0;
+    margin: -1px;
+    white-space: nowrap;
+    border: 0;
+    clip-path: (50%);
 }
 
 
@@ -123,6 +131,7 @@ footer > section > p {
     justify-content: center;
     gap: 2rem
 }
+
 .recipe-card {
     display: block;
     min-width: 100px;
@@ -130,6 +139,11 @@ footer > section > p {
     min-height: 100px;
     outline: 2px solid var(--color-dark);
     padding: 1rem;
+}
+
+.recipe-card:focus-visible {
+    outline: 6px solid var(--color-red);
+    outline-offset: 8px;
 }
 
 .img-holder {
@@ -235,6 +249,8 @@ div.recipe-container {
 
     .copyright {
     width: max-content;
+    padding: 6px 0;
+    border-bottom: none;
     }
 
 
